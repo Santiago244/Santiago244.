@@ -1,0 +1,235 @@
+{% extends "base.html"%}
+{% block style %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../static/styles/index.css">
+{% endblock %}
+
+{% block title %}
+LookForIt
+{% endblock %}
+
+{%block header%}
+<header class="body__header">
+    <nav class="header__navar">
+        <span class="navar__span">
+            <img src="../static/header/logomovil.svg" alt="Personal Brand">
+        </span> 
+        <ul id="modal" class="nav__ul">
+            <a class="a" href="https://htt213657958.wordpress.com" target="_blank" style="color:#fff;"> 
+                <li class="ul__li">
+                    <i class="fa-brands fa-wordpress-simple icons"></i>
+                    <span>Personal Website</span>
+                </li>
+            </a>
+            <a class="a" href="/articles" target="_blank">
+                <li class="ul__li">
+                    <i class="fa-regular fa-flag icons"></i>
+                    <span>Best Topics Concerns</span>
+                </li>
+            </a>
+            
+            <a class="a" href="../static/SANTIAGO GONZALEZ.pdf" target="_blank">
+                <li class="ul__li">
+                    <i class="fa-solid fa-file icons"></i>
+                    <span>CV</span>
+                </li>
+            </a>
+            <a class="head-back" href="index.html">
+                <li class="ul__li">
+                  Head Back
+                  </li>
+              </a>
+          </ul>
+          <button type="button" class="navar__btn alerta">
+              <i class="fa-solid fa-bars"></i>
+            </button>                    
+            <!-- ul 2 hamburguer menu-->
+            <ul class="none">
+                <a class="other" href="https://htt213657958.wordpress.com" target="_blank"> 
+                    <li class="ul__li2">
+                        <i class="fa-brands fa-wordpress-simple icons"></i>
+                        <span>Personal Website</span>
+                    </li>
+                </a>
+                <a class="other" href="/games" target="_blank">
+                    <li class="ul__li2">
+                        <i class="fa-regular fa-flag icons"></i>
+                        <span>My Games</span>
+                    </li>
+                </a>
+                
+                <a class="other" href="../static/SANTIAGO GONZALEZ.pdf" target="_blank">
+                    <li class="ul__li2">
+                        <i class="fa-solid fa-file icons"></i>
+                        <span>CV</span>
+                    </li>
+                </a>
+                <button title="btn" class="head-back headBack" href="index.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </ul>
+        </nav>
+        
+    </header>
+    {% endblock %}
+    
+    {% block main %}
+    <main>
+        <section class="absolute">
+            <h1>Frontend Developer</h1>
+            <a href="https://github.com/Santiago244" target="_blank"><button id="rotation">🎯</button></a>
+            <div class="bar"></div>
+            <div class="absolute__div">
+                <img class="img" src="../static/main/background.svg" alt="hero-img">
+                <p class="definition">
+                    Frontend Software Developer with management in high-tech, looking forward to worthed experience with IT companies while developing software solutions for customers’ troubles and ideas.
+          </p>
+        </div>
+    </section>
+  <section class="main__aboutme">
+      <h4 class="aboutme__sobremi">
+          Growing, Achiving Goals With amazing Traits:
+        </h4>
+        <!-- CHANGE ASPECTS PART, NONE CARES ABOUT THIS INFORMATION -->
+        <div class="aspects">
+            <div id="card1" class="aspects__cont">
+                <h4>Active Listening</h4>
+                <img src="../static/cards/mentally.svg" alt="Title representative">
+                <p>My mentality was built thanks to the knowledge I have acquired along my learning process. In which I put so much time that now is a habit. In addition, I do focusing exercises on nights frequenlty, thus improving my abilities to concentrate.</p>
+            </div>
+            <div id="card2" class="aspects__cont">
+                <img src="../static/cards/spiritually.svg" alt="Title representative">
+                <h4>Diligence</h4>
+                <p>My spirituality grows at the same time that I organize my time with the liabilities, and being aware of what I do daily is essential to keep the balance on my conscience, On this aspect, my performance is to pray and meditate.</p>
+            </div>
+
+            <div id="card3" class="aspects__cont">
+                <h4>Physically</h4>
+                <img src="../static/cards/physically.svg" alt="Title representative">
+                <p>Physically I go to the gym, do calisthenics excercises and keep active. This is due to I think my body is one of the most essential parts of my life, so I take care of it and keep it in the best shape I can.</p>
+            </div>
+            <div id="card4" class="aspects__cont">
+                <img src="../static/cards/socioeconomically.svg" alt="Title representative">
+                <h4>Socio Economically</h4>
+                <p>Socioeconomically I learn from Binance, Youtube content creators, and other sources. I intend to develop good relationships with my teachers from whom I learn or to who I can teach something, thus cleaning up my knowledge.</p>
+            </div>    
+        </div>
+    </section>
+    <!-- Carrosel of my projects -->
+    <section class="main__section__projects">
+        <h2>Professional Projects</h2>
+        <p class="main__section__projects__description">Profesional proyects section involves several productions I did, in order to practice and start making some real experience of the things customer and market needs.</p>
+            <div class="main__section__projects__container">
+                <div class="main__section__projects__container__double">
+                    <div class="main__section__projects__container__double__card card1">
+                        <a href="https://santiago244.github.io/Santiago244.github.io-CalculatorDOM/" target="_blank"><h2 id="calculatorTitle" class="none"><i class="fa-solid fa-calculator"></i>CALCULATOR</h2></a>
+                        <p id="calculatorDescription" class="description none">This project improved my <strong>DOM skills</strong>, and pushed me to learn linked lists data structures, since I had to interact with <strong>Nodelists</strong> for managing the selection of several elements with the same class.</p>
+                        <img src="../static/projectsimgs/calculatorproject.jpg" alt="Calculator Sample">
+                        <button title="btn" class="up"><i class="fa-solid  fa-arrow-up"></i></button>
+                        <button title="btn" class="down none"><i class="fa-solid  fa-arrow-down"></i></button>
+                    </div>
+                    <div class="main__section__projects__container__double__card card2">
+                        <a href="https://santiago244.github.io/Santiago244.github.io-EquinosVillavo/" target="_blank"><h2 id="calculatorTitle" class="none"><i class="fa-solid fa-horse"></i>EQUINOS WEBSITE</h2></a>
+                        <p id="calculatorDescription" class="description none">This project was a real solution that one of my friends asked me to do, he is a veterinarian student 🐎, a he asked for the frontend of a veterinarian website 🔥</p>
+                        <img src="../static/projectsimgs/equinoswebsiteproject.jpg" alt="Equino Sample">
+                        <button title="btn" class="up"><i class="fa-solid  fa-arrow-up"></i></button>
+                        <button title="btn" class="down none"><i class="fa-solid  fa-arrow-down"></i></button>
+                    </div>
+                    <div class="main__section__projects__container__double__card card3">
+                        <a href="https://santiago244.github.io/santiago244.github.io-PhoneBookAppLandingPage/" target="_blank"><h2 id="calculatorTitle" class="none"><i class="fa-solid fa-book"></i>Ilustration Booking</h2></a>
+                        <p id="calculatorDescription" class="description none">The ilustration of the booking application was a very good project to learn about libraries and how to manage dependancies, thereby I realized why Docker is such a powerful tool.</p>
+                        <img src="../static/projectsimgs/ilustrationAplication.jpg" alt="Ilustration Sample">
+                        <button title="btn" class="up"><i class="fa-solid  fa-arrow-up"></i></button>
+                        <button title="btn" class="down none"><i class="fa-solid  fa-arrow-down"></i></button>
+                    </div>
+                    <div class="main__section__projects__container__double__card card4">
+                        <a href="https://santiago244.github.io/Santiago244.github.io-Landingpage/" target="_blank"><h2 id="calculatorTitle" class="none"><i class="fa-solid fa-file"></i> Landing Page</h2></a>
+                        <p id="calculatorDescription" class="description none">This was one of my first projects and really worthed it , I learned a lot about <strong>animations and DOM management</strong>, thanks this I feel comfortable with frontend technologies. </p>
+                        <img src="../static/projectsimgs/landingpageproject.jpg" alt="Landing Sample">
+                        <button title="btn" class="up"><i class="fa-solid  fa-arrow-up"></i></button>
+                        <button title="btn" class="down none"><i class="fa-solid  fa-arrow-down"></i></button>
+                    </div>
+                </div>
+                <div class="main__section__projects__container__buttons">
+                        <button title="btn" class="buttonsolid left"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button title="btn" class="buttonsolid right"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+    </section>
+    <section id="skillsanimation" class="section-margin">
+        <h3 class="skills__h3">Technical Skills</h3>
+        <div class="mydescribtion">
+            <img class="techskills" src="../static/main/techskills.svg" alt="techskills">
+            <div class="skills">
+                <h4 class="h4">JAVASCRIPT</h4>
+                <h4>HTML</h4>
+                <h4>CSS</h4>
+                <!-- ="#">    value="REACT"><h4>REACT</h4> -->
+                <h4>FIGMA</h4>
+          </div>
+        </div>
+    </section>
+    <section class="articles">
+        <h2 class="articles__def__art">Personal Articles</h2>
+        <h4 class="articles__describ__art">Those that I wrote while doing night research in several trustful websites. Here you will see my lastest articles.</h4>
+        <div class="articles__cont__arts__cards">
+        <div id="arts__card1" class="articles__cont__arts__cards__card ">
+            <a href="https://petite-flute-ebe.notion.site/Student-s-Performance-on-Distinct-Sites-ba832d9c2dc842868d8a789c73d2b6d5" target="_blank"><button id="circle1" class="circle">></button></a>
+            <img class="articles__cont__arts__cards__card__img" src="../static/articlesimgs/firstart.jpeg" alt="firstart">
+            <p class="articles__cont__arts__cards__card__description descriptionArticle1">The student's performance in different environments, upsides, and downsides of each way, these articles may convey to you what is the best way to learn, regarding your background, weaknesses, and strengths, personally one of the best enticing articles I have written.</p>
+        </div>
+        
+            <div id="arts__card2" class="articles__cont__arts__cards__card">
+                <a href="https://petite-flute-ebe.notion.site/Cost-Benefit-Analysis-bfd385edacd64d7c9d815c282602676c" target="_blank"><button id="circle2" class="circle">></button></a>
+                <img class="articles__cont__arts__cards__card__img" src="../static/articlesimgs/secondart.jpeg" alt="secondart">
+                <p class="articles__cont__arts__cards__card__description descriptionArticle2">The cost benefit analysis is another powerful tool when it comes to gauge the benefit resectively of two or more situations that will send us to the same solution, even though, could be use for different solutions and even emotions evolve situations.</p>
+            </div>
+            <div id="arts__card3" class="articles__cont__arts__cards__card">
+                <a href="https://petite-flute-ebe.notion.site/Investments-on-ETFs-6fc1c21fe58f494492dc7bc129c169d3" target="_blank"><button id="circle3" class="circle">></button></a>
+                <img class="articles__cont__arts__cards__card__img" src="../static/articlesimgs/thirdart.jpeg" alt="thirdart">
+                <p class="articles__cont__arts__cards__card__description descriptionArticle3">Investments are one of the trendys topics nowadays, but what is investing, and how make it well is essential to know, this article could walk you through the basic concepts to start doing it, in a safety way.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2 class="contact__feedback">Feedback</h2>
+        <p class="contact__description">Here you could tell me whatever your thoughts are about the website, whether they are critics or even ideas about how to improve it, just take 30 seconds, and they will worth it.</p>
+        <form class="contact__form" action="/feedback" method="POST">
+            <div class="contact__form__cont1">
+                <div class="contact__form__cont1-inputCont">
+                    <input id="name" class="contact__form__cont1-inputCont__input" type="text" name="name" autocomplete="off" required pattern="[a-z|A-Z0-9]+" title="Only alphanumeric characters are allowed"><label id="label" for="name" >Name: </label>
+                </div>
+                <div class="contact__form__cont1-inputCont">
+                    <input id="email" class="contact__form__cont1-inputCont__input" type="email" name="email" autocomplete="off"><label id="label2" for="email" >Email: </label>
+                </div>
+            </div>
+            <div class="contact__form__cont2">
+                <h4>Website Feedback</h4>
+                <textarea class="contact__form__cont2__txtarea" name="message" id="message" cols="30" rows="10" required placeholder="25 limit of words 👀 and less than 5 are not valid"></textarea>
+                <div class="words__container">
+                    <span class="words">Words: <strong class="numberWords">0</strong> </span>
+                </div>
+            </div>
+            <input class="contact__form__btn" type="submit">
+        </form>
+    </section>
+</main>
+{% endblock%}
+
+{% block footer %}
+<footer class="footer">
+    <a href="https://www.linkedin.com/in/santiago-gonzalez-cuellar-a920801ab/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Santiago244" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <a class="whatsapp-icon" href="https://api.whatsapp.com/send?phone=573212388173&text=Hello there." target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <!-- <img src="../static/header/whatsApp.svg" alt="Personal whatsap conctact"> -->
+    </a>
+</footer>
+<script type="text/javascript" src="../static/js/index.js"></script>
+<script type="text/javascript" src="../static/js/proyects.js"></script>
+<script type="text/javascript" src="../static/js/feedback.js"></script>
+{% endblock %}

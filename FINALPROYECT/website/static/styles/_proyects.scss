@@ -1,0 +1,167 @@
+@import 'variables';
+.main__section__projects{
+    h2{
+        text-align: center;
+    }
+    &__description{
+        padding: 20px;
+        margin-left: 5%;
+    }
+    &__container{
+        margin-top: 10%;
+        width: 100%;
+        max-width: 120em;
+        height: min-content;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        &__double{
+            background-color:transparent;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 400%;
+            transition: all 1s ease-in;
+            overflow-y: hidden;
+            &__card{
+                border-radius: 40px;
+                margin-bottom: 5%;
+                width: calc( 100% / 4);
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                position:relative;
+                justify-content: center;
+                transition: all 2s ease;
+                img{
+                    margin-left: 15%;
+                    width: 70%;
+                    height: 100%;
+                    border-radius: 20px;
+                    object-fit: cover;
+                    object-position: top left;
+                    transition: all 2s ease;
+                }
+                h2{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    padding-top: 10px;
+                    border-radius: 25px;
+                    background:linear-gradient(to right,rgb(14, 14, 219),$purplestrong-color);
+                    transition: all 2s ease;
+                }
+                .description{
+                    position:absolute;
+                    width: 90%;
+                    color: #fff;
+                    top: 15%;
+                    padding-top: 10px;
+                    right: 5%;
+                    border-bottom: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    border-left: 1px solid #fff;
+                    border-radius: 40px;
+                    padding:15px;
+                    transition: all 2s ease;
+                    
+                }
+                .none{     
+                    display: none;
+                }
+                button{
+                    transition: all 2s ease;
+                    position: absolute;
+                    margin:0 auto;
+                    width: 15%;
+                    padding: 10px;
+                    top: 100%;
+                    right: 0;
+                    border-radius: 20px;
+                    left: 0;
+                    background-color: transparent;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+                
+            }
+            @media screen and(min-width:700px) {
+                margin: auto;
+                transition: all 2s ease;
+                &__card{
+                    width: 10%;
+                    height: 70vh;
+                    margin: 0 auto;
+                    justify-content:center;
+                    margin-bottom: 2%;
+                    &__slide{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    img{
+                        border-radius: 10px;
+                        width:100%;
+                        margin: 0;
+                        height: 100%;
+                        object-fit: scale-down;
+                        object-position: top;
+                        border-radius: 30px;
+                    }
+                    h2{
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        text-align: center;
+                        background:linear-gradient(to right,rgb(14, 14, 219),$purplestrong-color);
+                        padding-top:40px ;
+                        transition: all 2s ease;
+                    }
+                    .h2{
+                        display: none;
+                    }
+                    .description{
+                        width: 100%;
+                        margin:0 auto;
+                        top: 15%;
+                        left: 0;
+                        padding:40px;
+                        text-align: justify;
+                    }
+                    .none{
+
+                    }
+                }
+            }
+            
+        }
+        
+    &__buttons{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        button{
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+                }
+            }
+        .active{
+            background-color: #043;
+        }
+        }
+        @media screen and(min-width:800px) {
+            margin-top: 3%;
+        }
+    }
+}

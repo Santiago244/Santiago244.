@@ -1,0 +1,119 @@
+@import 'variables';
+.contact{
+    margin-top: 140vh;
+    &__feedback{
+        padding-left: 30px;
+        margin-bottom: 5%;
+    }
+    &__description{
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 1.4;
+        color: #f2f2f2;
+    }
+    &__form{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        &__cont1{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            label{
+                top: 40%;
+                left: 2%;
+                position: absolute;
+                @media screen and(min-width:1000px) {
+                    top: 55%;
+                }
+            }
+            .label{
+                top: 45%;
+                left: -30%;
+                position: absolute;
+                @media screen and(min-width:1000px) {
+                    top: 55%;
+                }
+            }
+            &-inputCont{
+                width: 60%;
+                position: relative;
+                &__input{
+                    margin-top: 5%;
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    border-radius: 87px;
+                    background: #081d46;
+                    color: #ffffff;
+                    &:focus-visible{
+                        outline: none;
+                        color: #fff;
+                        background-color: #081d46;
+                    }
+                    &:hover{
+                        box-shadow: 0 0 6px #f1edf3, 0 0 25px #4e59ad, 0 0 50px #110d85;
+                    }
+                }
+            }
+        }
+        &__cont2{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            position: relative;
+            h2{
+                
+            }
+            &__txtarea{
+                margin-top: 5%;
+                width: 60%;
+                height: 200px;
+                resize: none;
+                padding: 40px;
+                border-radius: 20px;
+                &::placeholder{
+                    font-weight: 1000;
+                }
+            }
+            .words__container{
+                position:absolute;
+                width: 50%;
+                top: 60%;
+                height: 100px;
+                background-color: transparent;
+                .words{
+                    position: absolute;
+                    bottom: 10%;
+                    right: 20%;
+                    color: #000;
+                    font-weight: bolder;
+                    font-size: 10px;
+                }
+            }
+        }
+        &__btn{
+            margin-top: 5%;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 10%;
+            border:none;
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid #fff;
+            font-weight: bold;
+            &:hover{
+                background-color:#fff;
+            }
+        }
+    }
+
+}
